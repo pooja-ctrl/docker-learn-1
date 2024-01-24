@@ -1,0 +1,40 @@
+Number of Indexes with 7 months retention - 13
+Indexes in Git but incorrect retention -
+index=lb (Git - 4 months, Confluence - R0, 13 months))
+index=aws (Git - 4 Months, Confluence - R0, 13 months))
+index=eks-prod  (Git - 4 Months, Confluence - R0, 13 months))
+-------------------------------------------------------------
+Number of Indexes with 7 months retention - 23
+Indexes to be created and are not present in Git file -
+index=admin-portal (zopaAdminPortal logs), index=conman (conman logs) > these are still under index=prod and there is no specific retention period mentioned on Confluence page for index=prod)
+index=auth0 (not yet migrated from eks-prod) > still under index=eks-prod which has retention of 13 months
+Indexes not in Git -
+index=vmware-vclog
+Indexes in Git but incorrect retention -
+index=kafka ((Git - 13 months, Confluence - R1, 7 months))
+index=endpoint ((Git - 4 months, Confluence - R1, 7 months))
+-------------------------------------------------------------
+Number of Indexes with 4 months retention - 12
+Indexes not present in Git file -
+index=dhcp
+-------------------------------------------------------------
+Number of Indexes with 2 months retention - 8
+Indexes in Git but incorrect retention -
+index=dlp  (Git - 4 months, Confluence - R3, 2 months))
+index=tenable (Git - 4 months, Confluence - R3, 2 months))
+Indexes to be created and are not present in Git file -
+index=aws-fsx
+-------------------------------------------------------------
+Number of Indexes with 1 month retention - 4
+Indexes in Git but incorrect retention -
+index=uat (Git - 2 months, Confluence - R4, 1 month))
+index=aws-nonprod  (Git - 2 months, Confluence - R4, 1 month))
+Indexes to be created and not present in Git file -
+index=jamf
+
+
+
+
+
+17:52
+There are two indexes on Git index=tmp and index=aws-backup which are not documented on Confluence
