@@ -1,0 +1,288 @@
+[sfdc_event_log]
+_rcvbuf = 1572864
+attr =
+cols =
+disabled =
+interval = 3600
+key = S
+python.version = python3
+sourcetype = sfdc:logfile
+start_by_shell = 0
+
+[sfdc_object]
+_rcvbuf = 1572864
+attr =
+cols =
+delay = 0
+disabled =
+interval = 120
+key = S
+order_by = LastModifiedDate
+python.version = python3
+sourcetype = sfdc:object
+start_by_shell = 0
+
+[sfdc_object://account]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = Account
+object_fields = Id,LastModifiedById,LastModifiedDate,Name
+order_by = LastModifiedDate
+start_date = 2022-08-18T15:40:13.000z
+
+[sfdc_object://apianomalyevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = ApiAnomalyEvent
+object_fields = EventIdentifier,EventDate,LoginKey,Operation,QueriedEntities,SecurityEventData,SessionKey,SourceIp,Summary,Uri,UserAgent,UserId,Username
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://authsession]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = AuthSession
+object_fields = CreatedDate,Id,IsCurrent,LastModifiedDate,LoginHistoryId,LoginType,SessionSecurityLevel,SourceIp,UserType,UsersId
+order_by = LastModifiedDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://contentversion]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = ContentVersion
+object_fields = Id,LastModifiedById,LastModifiedDate,Title
+order_by = LastModifiedDate
+start_date = 2021-12-28T14:41:27.000z
+
+[sfdc_object://credentialstuffingevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = CredentialStuffingEvent
+object_fields = EventDate,EventIdentifier,LoginKey,LoginType,UserAgent,LoginUrl,PolicyOutcome,SourceIp,Summary,UserId,Username
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://dashboard]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = Dashboard
+object_fields = Id,LastModifiedDate,Title
+order_by = LastModifiedDate
+start_date = 2021-12-28T14:41:42.000z
+
+[sfdc_object://deleteevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = DeleteEvent
+object_fields = DeletedById,DeletedDate,Record,RecordName
+order_by = DeletedDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://hostnameredirects]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = HostnameRedirects
+object_fields = EVENT_TYPE,TIMESTAMP,ORGANIZATION_ID,USER_ID,URI,SESSION_KEY,LOGIN_KEY,MESSAGE,SOURCE_HOSTNAME,TARGET_HOSTNAME,PATH,REDIRECT_REASON,IS_BLOCKED_REDIRECTION
+order_by = TIMESTAMP
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://idpeventlog]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = IdpEventLog
+object_fields = Timestamp,UserId,AppId,AuthSessionId,ErrorCode,IdentityUsed,InitiatedBy,SamlEntityUrl,SsoType
+order_by = Timestamp
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://loginasevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = LoginAsEvent
+object_fields = Application,Browser,DelegatedUsername,EventDate,EventIdentifier,LoginAsCategory,LoginHistoryId,LoginKey,LoginType,Platform,SessionLevel,SourceIp,TargetUrl,UserId,Username,UserType
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://loginevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = LoginEvent
+object_fields = EventDate,Application,LoginKey,Username,SourceIp,UserType,Browser,Country,LoginHistoryId
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://logineventstream]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = LoginEventStream
+object_fields = AuthMethodReference,Application,Browser,City,Country,EventDate,EventIdentifier,HttpMethod,LoginHistoryId,LoginKey,LoginType,LoginUrl,Platform,PolicyOutcome,SessionLevel,Status,SourceIp,UserId,Username,UserType
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://loginhistory]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 300
+key = S
+object = LoginHistory
+object_fields = ApiType,ApiVersion,Application,Browser,ClientVersion,Id,LoginTime,LoginType,LoginUrl,Platform,SourceIp,Status,UserId
+order_by = LoginTime
+start_date = 2021-12-28T14:45:00.000z
+
+[sfdc_object://mailmergetemplate]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = MailmergeTemplate
+object_fields = Body,Description,Filename,LastUsedDate,isDeleted,,Name,SecurityOperationsAttachmentHasFlash,SecurityOperationstionsAttachmentHasXSSThreat,SecurityOperationsAttachmentScannedForXSS
+order_by = LastUsedDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://report]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = Report
+object_fields = Id,LastModifiedDate,Name
+order_by = LastModifiedDate
+start_date = 2021-12-28T14:42:08.000z
+
+[sfdc_object://sessionhijackingevent]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = SessionHijackingEvent
+object_fields = CurrentIp,PreviousIp,PreviousPlatform,UserId,Summary,Username,SessionKey,SourceIp,PreviousUserAgent,CurrentPlatform,CurrentUserAgent,EventDate,EventIdentifier,LoginKey,PolicyOutcome,SecurityEventData
+order_by = EventDate
+start_date = 2022-03-01T00:00:00.000z
+
+[sfdc_object://user]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = User
+object_fields = LastModifiedDate,City,Country,FirstName,Id,IsActive,LastLoginDate,LastName,Latitude,Longitude,MobilePhone,Name,PostalCode,State,Username,UserRoleId,UserType,Email,CompanyName,ProfileId,Profile.PermissionsApiEnabled,Profile.PermissionsModifyAllData,Profile.PermissionsViewSetup
+order_by = LastModifiedDate
+start_date = 2022-08-18T15:40:29.000z
+
+[sfdc_object://userrecordaccess]
+_rcvbuf = 1572864
+account = zopa_salesforce_account
+attr =
+cols =
+delay = 0
+disabled =
+index = salesforce
+interval = 1200
+key = S
+object = UserRecordAccess
+object_fields = HasAllAccess,HasDeleteAccess,HasEditAccess,HasTransferAccess,HasReadAccess,RecordId,UserId
+order_by = RecordId
+start_date = 2022-03-01T00:00:00.000z
